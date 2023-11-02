@@ -93,23 +93,24 @@
 								<header>
 									<h2>Contact Me</h2>
 								</header>
-								<form action="#" method="post">
+								<form action="https://formspree.io/f/mpzgnpne" method="POST">
 									<div>
 										<div class="row">
 											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
+												<input type="text" name="name" placeholder="Name" pattern="[A-Za-z]+" required/>
 											</div>
 											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
+												<input type="text" name="email" placeholder="Email" required/>
 											</div>
 											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
+												<input type="text" name="subject" placeholder="Subject" required/>
 											</div>
 											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
+												<textarea name="message" placeholder="Message" rows="6" required></textarea>
 											</div>
 											<div class="col-12">
-												<input type="submit" value="Send Message" />
+                        <button type='submit'>Send Message</button>
+												<!-- <input type="submit" value="Send Message" /> -->
 											</div>
 										</div>
 									</div>
