@@ -37,6 +37,15 @@ ol, ul {
 	list-style: none;
 }
 
+li > ul {
+  margin: 0;
+  list-style: circle
+}
+
+dd {
+  margin-left: 1em
+}
+
 blockquote, q {
 	quotes: none;
 }
@@ -1379,10 +1388,20 @@ input, select, textarea {
 		letter-spacing: -0.015em;
 	}
 
-	h3, h4, h5, h6 {
+	h3 {
 		font-size: 1.25em;
 		letter-spacing: -0.015em;
 	}
+
+  h4 {
+    font-size: 1em;
+		letter-spacing: -0.015em;
+  }
+
+  h5, h6 {
+    font-size: .85em;
+		letter-spacing: -0.015em;
+  }
 
 	@media screen and (max-width: 736px) {
 
@@ -1394,10 +1413,18 @@ input, select, textarea {
 			font-size: 1.375em;
 		}
 
-		h3, h4, h5, h6 {
+		h3 {
 			font-size: 1em;
 		}
 
+    h4 {
+    font-size: .8em;
+    }
+
+    h5, h6 {
+    font-size: .7em;
+    }
+    
 	}
 
 	blockquote {
